@@ -63,8 +63,8 @@ def start_loop():
     def handler(self, *args, **kargs):
         nonlocal current_title
         nonlocal current_artist
-        artist = args[0]["Metadata"]["xesam:title"]
-        title = args[0]["Metadata"]["xesam:artist"][0]
+        title = args[0]["Metadata"]["xesam:title"]
+        artist = args[0]["Metadata"]["xesam:artist"][0]
         if title != current_title or artist != current_artist:
             print()
             print("=" * 40)
